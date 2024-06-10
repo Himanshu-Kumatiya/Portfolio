@@ -1,0 +1,69 @@
+#skills{
+    margin-top: 150px;
+}
+.experience_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+    
+}
+.experience_frontend,.miscellaneous,.experience_backend{
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    height: fit-content;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background: linear-gradient(var(--color-primary),transparent);
+    
+}
+.experience_backend{
+    position: relative;
+    top: 12vh;
+}
+.experience_backend:hover,.experience_frontend:hover,.miscellaneous:hover{
+    background: linear-gradient(transparent,var(--color-primary));
+    
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    h3{
+        color: var(--color-primary);
+    }
+}
+.experience_container> div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-bg-variant);
+}
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.2rem;
+}
+.experience_details{
+    display: flex;
+    gap: 0.5rem;
+    
+}
+.experience_details>div{
+    color: rgb(221, 223, 226);
+}
+.backend-misc{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+@media screen and (max-width:1024px){
+    .experience_backend{
+        position: relative;
+        top: 0vh;
+    }
+    
+}
+@media screen and (max-width:650px){
+    .experience_frontend,.miscellaneous,.experience_backend{
+        padding: 2rem 3rem;
+    }
+}

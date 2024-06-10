@@ -1,0 +1,14 @@
+.profiles{
+    display: flex;
+    flex-wrap: wrap;
+    gap:4rem;
+    justify-content: center;
+    align-items: center;
+}
+.profile a{
+    padding: 6px;
+    border: 2px solid var(--color-primary);
+    border-radius: 15px;
+    font-size: 24px;
+    
+}
