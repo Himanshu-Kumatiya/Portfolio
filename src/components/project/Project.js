@@ -3,25 +3,37 @@ import "./project.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import woodhill from "../../assests/Woodhill.png"
 import BlogPost from "../../assests/BlogPost.png"
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { DiMongodb } from "react-icons/di";
+import { SiCloudinary } from "react-icons/si";
 import knowledgeGrasp from "../../assests/KnowledgeGrasp.png"
 const items = [
   {
     id: 1,
     title: "KnowledgeGrasp",
     img: knowledgeGrasp,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link:"",
+    code:"https://github.com/Himanshu-Kumatiya/KnowledgeGrasp",
+    desc: "KnowledgeGrasp, dedicated to transforming education through innovative technology solutions.",
   },
   {
     id: 2,
     title: "Woodhill",
+    code:"https://github.com/Himanshu-Kumatiya/Woodhill-Hotel-Restaurant",
+    link:"",
     img: woodhill,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Woodhill Hotel and Restaurant, seeks to bridge the gap between discerning travelers and quality accommodations and dining experiences.",
   },
   {
     id: 3,
     title: "BlogPost",
+    code:"https://github.com/Himanshu-Kumatiya/BlogPost",
     img: BlogPost,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link:"https://blogpost-2.onrender.com/",
+    desc: " BlogPost is a community of passionate writers, thinkers, and creators who believe in the power of words to inspire, inform, and connect people from all walks of life.",
   },
   
 ];
@@ -45,7 +57,18 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <div >
+              <FaReact style={{marginLeft:"20px",fontSize:"30px"}}/>
+              <FaNode style={{marginLeft:"20px",fontSize:"30px"}} />
+              <SiExpress style={{marginLeft:"20px",fontSize:"30px"}}/>
+              <DiMongodb style={{marginLeft:"20px",fontSize:"30px"}}/>
+              <SiCloudinary style={{marginLeft:"20px",fontSize:"30px"}}/>
+              
+            </div>
+            <div >
+            <a href={item.code} target="_blank">Source</a>
+            <a style={{marginLeft:"30px"}} target="_blank" href={item.link}>Demo</a>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import './header.css'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import Cv from "../../assests/cv.pdf"
+import Cv from "../../assests/Resume-Himanshu.pdf"
 import photo from "../../assests/beach.jpg"
 export const Header = () => {
     return (
@@ -15,7 +15,7 @@ export const Header = () => {
                     <h1>Himanshu kumatiya</h1>
                     <h3 className='text-light'>
                         <Typewriter
-                            words={['Frontend developer', 'Backend developer', 'Learner', 'Coder', 'Data enthusiast']}
+                            words={['Frontend developer', 'Backend developer', 'Data enthusiast']}
                             loop
                             cursor
                             cursorStyle='_'
